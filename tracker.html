@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malibu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: #000;
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+    header .logo {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    header nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    header nav a:hover {
+      color: #00ffaa;
+    }
+
+    .hero {
+      height: 125vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      background: url('malibu-car.png') no-repeat center/contain;
+      background-color: #000;
+      background-blend-mode: multiply;
+    }
+
+    .hero img{
+        animation: slideIn 2s ease forwards;
+    }
+    .hero h1 {
+      font-size: 60px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+    .hero p {
+      font-size: 20px;
+      color: #aaa;
+    }
+    .hero button {
+      margin-top: 30px;
+      padding: 12px 28px;
+      font-size: 16px;
+      background: #00ffaa;
+      border: none;
+      border-radius: 6px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .hero button:hover {
+      background: white;
+      color: #000;
+    }
+
+    .rims-section {
+      height: 100vh;
+      background: linear-gradient(to right, #000, #222);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 60px;
+    }
+    .rim-img {
+      width: 40%;
+      animation: slideIn 2s ease forwards;
+    }
+    .rim-img img {
+      width: 100%;
+    }
+    .rim-info {
+      width: 50%;
+    }
+    .rim-info h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .rim-info p {
+      font-size: 18px;
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+    .rim-info button {
+      padding: 10px 24px;
+      background: #00ffaa;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateX(-100px); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MALIBU</div>
+    <nav>
+      <a href="#interior">INTERIOR</a>
+      <a href="#specs">SPECIFICATION</a>
+      <a href="#review">REVIEW</a>
+      <a href="#models">MODELS</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="tracker2.png" alt="">
+    <h1>Tracker</h1>
+    <p>Luxury. Power. Technology.</p>
+    <button>360° KO‘RISH</button>
+  </section>
+
+  <section class="rims-section">
+    <div class="rim-img">
+      <img src="trackerdisk.png" alt="Alloy Rims">
+    </div>
+    <div class="rim-info">
+      <h2>TRACKER DISKALARI</h2>
+      <p>Chevrolet Tracker - Barcha shinalar va g'ildiraklarning zavod xususiyatlari va almashtirish imkoniyatlari. Chevrolet Tracker model yillari uchun PCD, ofset va boshqa texnik xususiyatlar.</p>
+      <button>KO'RISH</button>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VSEVENSTORIES.UZ - Home</title>
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Video Background -->
+  <video autoplay muted loop id="bg-video">
+    <source src="./6724ec855b7128cf920716242732ecca_t1.mp4" type="video/mp4" />
+    Brauzeringiz video fonni qo‘llab-quvvatlamaydi.
+  </video>
+
+  <!-- HEADER -->
+  <header class="myHeader">
+  <div class="logo">VSEVENSTORIES.UZ</div>
+  <nav>
+    <a href="#asosiy">BOSH SAHIFA</a>
+    <a href="#mahsulotlar">MAHSULOTLAR</a>
+    <a href="#boshqaruvchilar">BOSHQARUVCHILAR</a>
+    <a href="#joylashuv">JOYLASHUV</a>
+    <a href="#kontakt">KONTAKT</a>
+  </nav>
+</header>
+
+<script>
+  let lastScrollTop = 0;
+  const header = document.getElementById("myHeader");
+
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+      // pastga tushyapti
+      header.style.top = "-80px";
+    } else {
+      // yuqoriga ko‘tarilyapti
+      header.style.top = "0";
+    }
+    lastScrollTop = scrollTop;
+  });
+</script>
+
+  <!-- MAIN SECTION -->
+  <main id="BOSH SAHIFA">
+    <!-- Xush kelibsiz matn -->
+    <h1 class="welcome-text">VSEVENSTORIES.UZ ga xush kelibsiz</h1>
+  </main>
+
+  <section class="products" id="mahsulotlar">
+  <h2 class="section-title">MAHSULOTLAR</h2>
+  <div class="product-container">
+    <div class="product-card">
+      <img src="malibu.png" alt="Mahsulot 1">
+      <h3>Malibu</h3>
+      <button class="details-btn" data-link="malibu.html">BATAFSIL</button>
+    </div>
+    <div class="product-card">
+      <img src="jentra.png" alt="Mahsulot 2">
+      <h3>Jentra</h3>
+      <button class="details-btn" data-link="jentra.html">BATAFSIL</button>
+    </div>
+    <div class="product-card">
+      <img src="tracker2.png" alt="Mahsulot 3">
+      <h3>Tracker</h3>
+      <button class="details-btn" data-link="tracker.html">BATAFSIL</button>
+    </div>
+  </div>
+</section>
+
+<!-- BOSHQARUVCHILAR SECTION (orqa fonsiz) -->
+<section class="admin-section" data-aos="fade-right" id="boshqaruvchilar">
+    <h2 class="admin">BOSHQARUVCHILAR</h2>
+  <div class="admin-container">
+    <div class="admin-left">
+      <img src="Admin.JPG" alt="Admin 1">
+    </div>
+    <div class="admin-right">
+      <h3>Abror Khabibullayev</h3>
+      <p>“VSEVENSTORIES.UZ’ni jonlantiradigan odam. Har bir effekt, har bir sahna — mening qo‘limdan.”</p>
+    </div>
+  </div>
+</section>
+
+<section class="admin-section alt" data-aos="fade-left">
+  <div class="admin-container">
+    <div class="admin-right">
+      <img src="Admin2.JPG" alt="Admin 2">
+    </div>
+    <div class="admin-left">
+      <h3>Ismoil Shokirov</h3>
+      <p>“VSEVENSTORIES.UZ'ni aktiv - vidio prasmotrlariga men javobgarman</p>
+    </div>
+  </div>
+</section>
+
+  <div class="admin-container">
+    <div class="admin-left">
+      <img src="Tgboshqaruvchi.jpg" alt="Admin 3">
+    </div>
+    <div class="admin-right">
+      <h3>Saidalo Asqarov</h3>
+      <p>“VSEVENSTORIES.UZ’ni telegram kanalini boshqaruvchisi”</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="map-section" id="joylashuv">
+  <!-- Video Overlay -->
+  <video autoplay muted loop playsinline class="map-video">
+    <source src="yer.MOV" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Map Background -->
+  <iframe
+    class="map-frame"
+    src="https://www.google.com/maps/embed?pb=!1m18...etc"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+
+  <!-- Optional Text on top -->
+  <div class="map-overlay-text">
+    <h2>BIZNING JOYLASHUV</h2>
+    <p>VSEVENSTORIES.UZ bosh ofisi mana shu yerda joylashgan</p>
+  </div>
+</section>
+
+<section class="contact-section" id="kontakt">
+  <div class="contact-cards">
+    <div class="contact-card">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>Manzil</h3>
+      <p>Toshkent shahri, Yunusobod tumani, 12-mavze</p>
+    </div>
+    <div class="contact-card">
+      <i class="fas fa-phone-alt"></i>
+      <h3>Telefon</h3>
+      <p>+998 90 123 45 67</p>
+    </div>
+    <div class="contact-card">
+      <i class="fas fa-envelope"></i>
+      <h3>Pochta</h3>
+      <p>info@vsevenstories.uz</p>
+    </div>
+  </div>
+
+  <div class="contact-form-area">
+    <h2>SO'ROV QOLDIRING BIZ SIZ BILAN BOG'LANAMIZ</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Ismingiz" required />
+      <input type="tel" placeholder="Telefon raqamingiz" required />
+      <input type="email" placeholder="Pochta manzilingiz" required />
+      <input type="text" placeholder="Qiziqayotgan mahsulot" />
+      <button type="submit">YUBORISH</button>
+    </form>
+  </div>
+</section>
+
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 VSEVENSTORIES.UZ. Barcha huquqlar himoyalangan.</p>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>
